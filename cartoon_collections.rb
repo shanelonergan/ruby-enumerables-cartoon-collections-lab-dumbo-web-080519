@@ -16,6 +16,5 @@ end
 
 def find_the_cheese(array)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  overlap = array & cheese_types
-  return overlap
+  array.any? { |cheese| cheese_types.include?(food) }
 end
