@@ -6,8 +6,7 @@ end
 
 def summon_captain_planet(planeteer_calls)
   caps_array = []
-  caps_array = planeteer_calls.map { |calls| calls.capitalize }
-  caps_array = caps_array.each { |calls| calls + "!" }
+  caps_array = planeteer_calls.map { |calls| calls.capitalize + "!" }
   return caps_array
 end
 
